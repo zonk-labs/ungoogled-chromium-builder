@@ -1,9 +1,9 @@
 version: '3'
 services:
-  ungoogled-chromium-build:
-    image: ungoogled-chromium-buildimg
-  volumes:
-    - type: bind
-      source: ./
-      target: /build/
+  ungoogled-chromium-builder:
+    image: ungoogled-chromium:builder
+    volumes:
+      - type: bind
+        source: ./
+        target: /build/
 
