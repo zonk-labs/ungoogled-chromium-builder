@@ -12,6 +12,6 @@ mk-build-deps -i --tool='apt-get -o Debug::pkgProblemResolver=yes --no-install-r
 rm ungoogled-chromium-build-deps_*
 dpkg-buildpackage -b -uc
 
-cp *.deb /build/
-cp *.changes /build/
-cp *.buildinfo /build/
+cp ../*.deb /build/
+cp ../*.changes /build/
+cp ../*.buildinfo /build/
